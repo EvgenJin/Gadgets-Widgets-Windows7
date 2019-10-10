@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+  <name>Work_timer</name>
+  <version>1.0.0.0</version>
+  <description>Work timer</description>
+  <hosts>
+    <host name="sidebar">
+      <base type="HTML" apiVersion="1.0.0" src="work_timer.html" />
+      <permissions>Full</permissions>
+      <platform minPlatformVersion="1.0" />
+    </host>
+  </hosts>
+</gadget>

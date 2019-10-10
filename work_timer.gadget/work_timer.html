@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	 <meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> 	 
+</head>
+
+<script>
+// 1000 - 1 ????
+setInterval(function(){
+   init();
+}, 60000);
+
+function init() {
+	var now = new Date();	
+	var end_work = new Date();
+	// ???? 17.30 
+	end_work.setHours(17,30)
+	//????
+	diff = Math.round(Math.abs((end_work - now))/(60 * 1000))
+	document.getElementById("target").innerHTML = diff;
+}
+
+</script>
+<body onload="init();">
+	<div class = "main">
+		<p id="target"></p>
+	</div>				
+</body>
+<style>
+body {
+	width: 119px;
+	height: 117px;
+	background: url(work_dev_in_progress.jpg) no-repeat;
+	font-family: 'Montserrat', sans-serif;	
+}	
+.main {
+	text-align: center;
+	background-repeat: inherit;
+}
+#target {
+	background: orange;
+	margin-top: 95px;
+}
+</style>
+</html>
